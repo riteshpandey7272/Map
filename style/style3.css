@@ -1,0 +1,32 @@
+.wave {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
+  position: absolute;
+  margin-top: 12.5rem;
+  top: 198rem;
+  width: 1459px;
+  height: 188px;
+  left: 100%;
+  animation: wave 7s cubic-bezier(0.3, 0.5, 0.6, 0.5) infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  opacity: 0.5;
+
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.2;
+  }
+
+  100% {
+    margin-left: 0;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.2;
+  }
+}

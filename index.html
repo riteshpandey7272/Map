@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>My Map</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-search/3.0.9/leaflet-search.min.css" />
+	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+	<link rel="stylesheet" href="./style/style.css">
+	<link rel="stylesheet" href="./style/style2.css">
+	<link rel="stylesheet" href="./style/style3.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+		integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+</head>
+
+<body>
+
+
+	<!-- Map section -->
+	<section>
+		<div class="wrapper">
+			<div class="maps">
+				<div id="map" class="maps"></div>
+			</div>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-search/3.0.9/leaflet-search.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+		<!-- <script src="./javaScript/particle.js"></script> -->
+
+
+	</section>
+
+
+
+
+	<!-- bottom -->
+	<section id="main" class="bot">
+
+		<div class="table">
+			<div class="table-row">
+				<div class="table-cell">
+					<div class="days"></div>
+				</div>
+				<div class="table-cell">
+					<div class="days"></div>
+				</div>
+				<div class="table-cell">
+					<div class="days"></div>
+				</div>
+				<div class="table-cell">
+					<div class="days"></div>
+				</div>
+				<div class="table-cell">
+					<div class="days"></div>
+				</div>
+				<div class="table-cell">
+					<div class="days"></div>
+				</div>
+				<div class="table-cell">
+					<div class="days"></div>
+				</div>
+				<!-- About Section -->
+				<div id="about" class="about">
+					<div class="container">
+						<p><b>About location</b></p>
+						<p id="location">Loading location...</p>
+						<!-- <img id="loading-img" src="./icons/loading.png" alt=""> -->
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+
+		<div class="legend" data-ref="legend">
+			<div class="details">
+
+				<div class="legend-hour height-hour">
+					<span class="legend-left">Hours</span>
+					<span data-do="metric,hour" class="legend-right">
+						<span class="clock-icon"> <img class="tim" src="./icons/time.png" alt=""> </span>
+					</span>
+				</div>
+
+				<div class="legend-temp height-temp">
+					<span class="legend-left">Temperature</span>
+					<span data-do="metric,temp" class="legend-right metric-clickable" style="margin-left: 2px;">
+						°C</span>
+				</div>
+
+				<div class="legend-rain height-wind">
+					<span class="legend-left">Rain</span>
+					<span data-do="metric,wind" class="legend-right metric-clickable" style="margin-left: 3rem;">
+						mm</span>
+				</div>
+
+				<div class="legend-wind height-wind">
+					<span class="legend-left">Wind</span>
+					<span data-do="metric,wind" class="legend-right metric-clickable" style="margin-left: 3rem;">
+						kt</span>
+				</div>
+				<div class="legend-wind-gusts height-wind">
+					<span class="legend-left">Wind gusts</span>
+					<span data-do="metric,wind" class="legend-right metric-clickable" style="margin-left: 1rem;">
+						kt</span>
+				</div>
+
+				<div class="legend-dir height-wind">
+					<span class="legend-left">Wind D</span>
+					<span data-do="metric,wind" class="legend-right metric-clickable" style="margin-left: 1.2rem;"> <img
+							class="dir" src="./icons/dir.png" alt=""></span>
+				</div>
+
+				
+
+				
+			</div>
+
+
+
+			<!-- Hours -->
+			<div class="hour">
+				<div class="time" id="current-time"></div>
+				<p class="tem" id="forecast">Loading forecast data...</p>
+			</div>
+
+			<div class="ocean">
+				<div class="wave"></div>
+				<div class="wave"></div>
+			</div>
+
+			
+		</div>
+
+	</section>
+	<script src="./javaScript/index.js"></script>
+	<script src="./javaScript/index2.js"></script>
+
+</body>
+
+</html>
+
+

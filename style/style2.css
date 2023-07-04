@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,300;1,400;1,600&display=swap');
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.table {
+  display: table;
+  width: 100%;
+  margin-left: 135px;
+}
+
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+  border: 0.1px #fff solid;
+}
+
+.days {
+  width: 361px;
+  height: 30px;
+  padding-top: 5px;
+  font-weight: 200;
+  background-color: #ece9e9;
+  text-align: center;
+}
+
+.legend {
+  height: 210px;
+  width: 130px;
+  padding-top: 2px;
+  background-color: #e5e5e5;
+  position: absolute;
+}
+
+.details {
+  padding: 1px;
+  height: 20px;
+}
+
+.legend-hour {
+  display: flex;
+  align-items: center;
+}
+
+.legend-right {
+  align-items: center;
+}
+
+.clock-icon {
+  margin-left: 2.2rem;
+}
+
+.tim {
+  width: 16px;
+  height: 16px;
+}
+
+.legend-temp {
+  margin-top: 3.45rem;
+}
+
+.legend-rain {
+  margin-top: 10px;
+}
+
+.legend-wind {
+  margin-top: 10px;
+}
+
+.legend-wind-gusts {
+  margin-top: 10px;
+}
+
+
+.legend-dir {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.legend-right {
+  margin-left: 1rem;
+}
+
+.dir {
+  margin-top: 4px;
+  float: right;
+  height: 20px;
+  width: 50px;
+}
+
+
+.legend-rain {
+  margin-top: 8px;
+}
+
+.temp {
+  position: fixed;
+  margin-left: 10rem;
+  margin-top: 30em;
+}
+
+.about {
+  float: right;
+  width: 60%;
+  left: 86%;
+  position: absolute;
+  width: 290px;
+  height: 220px;
+  background-color: #ece9e9;
+  padding-left: 20px;
+  top: 47.8rem;
+}
+
+.about .container img {
+  height: 100px;
+  width: 80px;
+  /* margin-left: 5rem; */
+}
+
+#loading-img {
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+#main {
+  display: none;
+}
+
+.bot {
+  margin-top: 39.3rem;
+}
+
+.bot.show {
+  display: block;
+}
+
+.hour {
+  margin-left: 9rem;
+  /* margin-right: 2rem; */
+  position: absolute;
+  top: 3%;
+}
+.formatted-hours{
+   font-size: 17px;
+   word-spacing: 2.15px;
+}
+.period {
+  font-size: 0.7em;
+  margin-right: 3px;
+}
+
+.weather-icons {
+  display: flex;
+  /* margin-left: 2px; */
+  width: 101.5%;
+  height: 32px;
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(0, 233, 113), rgb(0, 236, 189), rgb(249, 169, 77));
+  opacity: 0.7;
+  align-items: flex-start;
+}
+
+.weather-icons img {
+  margin-right: 9.5px;
+  margin-bottom: 2px;
+  /* top: 0; */
+  height: 40px;
+  width: 35px;
+}
+
+.tm {
+  margin-top: 10px;
+  margin-left: 2px;
+  word-spacing: 18.7px;
+}
+
+.rain {
+  margin-top: 8px;
+  background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(0, 236, 189), rgb(255, 250, 250), rgb(255, 235, 212));
+  margin-left: 1px;
+  word-spacing: 22px;
+  width: 101.5%;
+}
+
+.wind {
+  margin-top: 10px;
+  margin-left: 5px;
+  word-spacing: 33px;
+}
+
+.gusts {
+  margin-top: 10px;
+  /* margin-left: 4px; */
+  word-spacing: 31px;
+  width: 101.3%;
+  background-image: linear-gradient(to right, rgb(244, 244, 244), rgba(255, 0, 0, 0.3), rgb(244, 244, 244), rgb(0, 236, 189), rgb(249, 169, 77));
+}
+
+.windD {
+  margin-left: 0.1rem;
+  width: 98.9%;
+  height: 30px;
+  opacity: 0.7;
+  /* background: linear-gradient(to right, rgb(0, 233, 113), rgb(244, 244, 244), rgb(0, 236, 189),
+      rgb(244, 244, 244), rgb(249, 169, 77)); */
+  margin-top: 2px;
+  word-spacing: 20.219px;
+}
+
+.arrow-icon {
+  height: 30px;
+  width: 18px;
+  margin-left: 2.5px;
+  align-items: flex-start;
+
+}
+
+.arrow-icon .img {
+  margin-right: 9px;
+  margin-left: 5px;
+  height: 40px;
+  width: 35px;
+}
